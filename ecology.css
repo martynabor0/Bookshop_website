@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   /* position: relative; */
+  background-image: url(/pexels-alena-koval-886521.jpg);
 }
 
 .content {
@@ -29,6 +30,8 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap: 20px;
+  opacity: 0.8;
+  background: transparent;
 }
 footer a {
   text-decoration: none;
