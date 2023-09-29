@@ -1,0 +1,448 @@
+* {
+  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --opacity: 50%;
+}
+
+.stars {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 50px;
+}
+
+.stars a {
+  opacity: var(--opacity);
+  padding: 5px;
+}
+
+.stars:hover a {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.stars a:hover ~ a {
+  opacity: var(--opacity);
+}
+
+.content {
+  width: 1280px;
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 75px;
+  row-gap: 60px; */
+  position: relative;
+}
+.main-header {
+  background-color: #5c686d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 8px 8px 33px -6px rgba(48, 51, 84, 1);
+  -moz-box-shadow: 8px 8px 33px -6px rgba(48, 51, 84, 1);
+  box-shadow: 8px 8px 33px -6px rgba(48, 51, 84, 1);
+  border-radius: 10px 10px 10px 10px;
+  z-index: 2;
+
+  /* grid-column: 1/-1;
+  justify-items: center; */
+}
+footer {
+  background-color: rgb(239, 240, 243);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+}
+
+.bigger a {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+}
+.bigger a:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+.about-us {
+  display: grid;
+}
+.my-account {
+  display: grid;
+}
+.help {
+  display: grid;
+}
+.customer-service-center {
+  display: grid;
+}
+.find-us {
+  display: grid;
+  align-items: center;
+  justify-items: start;
+}
+.find-us-button {
+  margin: 0 0;
+  padding: 0 0;
+  border-style: none;
+}
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.find-icon:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #d62976;
+  color: white;
+}
+
+.copyright-text {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.header-and-buttons {
+  /* background-color: rgb(74, 228, 255); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+}
+
+.btn {
+  color: white;
+  font-size: 20px;
+  background-color: #5c686d;
+  border: none;
+  -webkit-box-shadow: 8px 8px 33px -6px rgba(73, 76, 109, 1);
+  -moz-box-shadow: 8px 8px 33px -6px rgba(73, 76, 109, 1);
+  box-shadow: 8px 8px 33px -6px rgba(73, 76, 109, 1);
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.search-placeholder {
+  border-radius: 7px 7px 7px 7px;
+  height: 25px;
+  padding-left: 10px;
+}
+.search-button {
+  border-radius: 7px 7px 7px 7px;
+  height: 25px;
+  font-weight: bold;
+  background-color: white;
+}
+.search-for-item {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.bookshelf-image {
+  margin-left: 50px;
+}
+.quote-and-martin {
+  margin: 0 20px;
+  background-color: #e0e4e6;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
+.book-for-everyone {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: #e0e4e6;
+  -webkit-box-shadow: 8px 8px 24px 17px rgba(224, 228, 230, 1);
+  -moz-box-shadow: 8px 8px 24px 17px rgba(224, 228, 230, 1);
+  box-shadow: 8px 8px 24px 17px rgba(224, 228, 230, 1);
+  margin-bottom: 50px;
+  /* grid-row: 2/3;
+  grid-column: 2/-1; */
+  /* display: flex;
+  align-items: center;
+*/
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: #e6e2e0;
+  border-style: solid;
+  border-width: 0 0 5px 0;
+  margin-bottom: 40px;
+}
+.all-best-sellers {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex: 0 0 auto;
+  margin-bottom: 30px;
+  height: 700px;
+  margin-bottom: 80px;
+}
+.best-seller {
+  /* background-color: blue; */
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* padding-top: 10px; */
+  -webkit-box-shadow: 8px 8px 24px 17px rgba(224, 228, 230, 1);
+  -moz-box-shadow: 8px 8px 24px 17px rgba(224, 228, 230, 1);
+  box-shadow: 8px 8px 24px 17px rgba(224, 228, 230, 1);
+  border-radius: 7px 7px 7px 7px;
+}
+
+.book-image {
+  border-radius: 7px 7px 7px 7px;
+  width: 230px;
+  height: 350px;
+}
+.habits {
+  margin: 10px 0;
+}
+
+.title {
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+.sthr {
+  margin-bottom: 55px;
+}
+.author {
+  width: 250px;
+  text-align: center;
+  color: #838c91;
+}
+.price {
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.rating-the-rest {
+  /* width: 800px; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+.stars {
+  grid-column: 1/-1;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #5c686d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  z-index: 2;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  /* color: black; */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  color: white;
+  min-width: 160px;
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #e6e2e0;
+  z-index: 2;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #eaf2f5;
+  color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 2;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  /* background-color: white; */
+  /* color: black;
+  font-weight: bold; */
+}
+
+/* 
+BUTTONS ADD TO CART
+ */
+
+.button-add-to-cart {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #d9dee1;
+  border: none;
+  /* color: #ffffff; */
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  z-index: 0;
+}
+
+.button-add-to-cart span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  background-color: #d9dee1;
+}
+
+.button-add-to-cart span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-add-to-cart:hover span {
+  padding-right: 25px;
+}
+
+.button-add-to-cart:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.rating {
+  background-image: url(gradient.png);
+  height: 500px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.haveyou {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-newsletter {
+  margin: 150px 200px 150px 200px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  background-color: #e5e7e7;
+  -webkit-box-shadow: inset -7px 5px 5px 0px rgba(197, 199, 235, 1);
+  -moz-box-shadow: inset -7px 5px 5px 0px rgba(197, 199, 235, 1);
+  box-shadow: inset -7px 5px 5px 0px rgba(197, 199, 235, 1);
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 15px;
+}
+
+.signmeup {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.name-email {
+  display: block;
+}
+
+.labnew {
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="fontello/css/fontello.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/150c8ff726.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book for everyone</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header-and-buttons">
+        <h1>Bookstore📖</h1>
+        <div class="buttons">
+          <button class="btn"><i class="fa-solid fa-user"></i></button>
+          <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+
+      <header class="main-header header" id="myheader">
+        <div class="search-for-item">
+          <label for="site-search">Search for item:</label>
+          <input
+            type="search"
+            placeholder="Write here..."
+            id="site-search"
+            name="q"
+            class="search-placeholder"
+          />
+
+          <button class="search-button">Search</button>
+        </div>
+        <nav>
+          <!-- <a href="#">Books</a>
+          <a href="#">Stationery</a>
+          <a href="#">Music</a>
+          <a href="#">Sales</a> -->
+
+          <div class="dropdown">
+            <button class="dropbtn"><a href="#">Books ⬇️</a></button>
+            <div class="dropdown-content">
+              <a href="#">Novels</a>
+              <a href="#">Poetry</a>
+              <a href="#">Fiction</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="#">Stationery</a></button>
+            <div class="dropdown-content">
+              <a href="#">Pens</a>
+              <a href="#">Highlighters</a>
+              <a href="#">Storage</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="#">Music</a></button>
+            <div class="dropdown-content">
+              <a href="#">Rock</a>
+              <a href="#">Rap</a>
+              <a href="#">Pop</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="#">Sales</a></button>
+            <div class="dropdown-content">
+              <a href="#">-75%</a>
+              <a href="#">-50%</a>
+              <a href="#">2 for 1</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <article>
+        <header class="photo-and-quote">
+          <div class="book-for-everyone">
+            <img
+              src="girl_with_books.jpg"
+              alt="A girl infront of a bookshelf"
+              width="600"
+              class="bookshelf-image"
+            />
+            <p></p>
+            <p class="quote-and-martin">
+              “A reader lives a thousand lives before he dies . . . The man who
+              never reads lives only one.” ~George R.R. Martin
+            </p>
+
+            <!-- <p>~George R.R. Martin</p></p> -->
+          </div>
+        </header>
+        <h2>Our Best Sellers</h2>
+        <div class="all-best-sellers">
+          <div class="best-seller">
+            <img
+              src="atomic_habits.png"
+              alt="Atomic habits"
+              height="350"
+              class="book-image"
+            />
+            <p class="title habits">
+              Atomic Habits: An Easy & Proven Way to Build Good Habits & Break
+              Bad Ones
+            </p>
+            <p class="author">by James Clear</p>
+            <p class="price">$14.99</p>
+            <button class="button-add-to-cart" style="vertical-align: middle">
+              <span>Add to cart </span>
+            </button>
+          </div>
+          <div class="best-seller">
+            <img
+              src="power_book.png"
+              alt="Power"
+              height="350"
+              class="book-image"
+            />
+            <p class="title sthr">The 48 Laws of Power</p>
+            <p class="author">by Robert Greene</p>
+            <p class="price">$15.99</p>
+
+            <button class="button-add-to-cart" style="vertical-align: middle">
+              <span>Add to cart </span>
+            </button>
+          </div>
+          <div class="best-seller">
+            <img
+              src="lessons_in_chemistry.png"
+              alt="Power"
+              height="350"
+              class="book-image"
+            />
+            <p class="title sthr">Lessons in Chemistry</p>
+            <p class="author">by Bonnie Garmus</p>
+            <p class="price">$17.99</p>
+
+            <button class="button-add-to-cart" style="vertical-align: middle">
+              <span>Add to cart </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="rating">
+          <div class="rating-picture">
+            <img
+              src="atomic_habits.png"
+              alt="Atomic habits"
+              width="250"
+              class="book-to-rate"
+            />
+            <p class="title">
+              Atomic Habits: An Easy & Proven Way to Build Good Habits & Break
+              Bad Ones
+            </p>
+            <p class="author">by James Clear</p>
+          </div>
+          <div class="rating-the-rest">
+            <p class="haveyou">Have you already read this book?</p>
+            <p class="haveyou">Give it a rating!</p>
+
+            <div class="gwiazdki">
+              <div class="stars">
+                <a>⭐</a>
+                <a>⭐</a>
+                <a>⭐</a>
+                <a>⭐</a>
+                <a>⭐</a>
+              </div>
+
+              <script src="script.js"></script>
+              <!-- <script>
+              document.write(
+                '<script src="http://' +
+                  (location.host || "localhost").split(":")[0] +
+                  ':35729/livereload.js?snipver=1"></' +
+                  "script>"
+              );
+            </script> -->
+            </div>
+          </div>
+        </div>
+        <div class="form-newsletter">
+          <h4>
+            JOIN OUR NEWSLETTER
+            <i class="fa fa-light fa-newspaper" style="color: #000000"></i>
+          </h4>
+          <h5>
+            Sign up for our weekly update and be first to know about our
+            specials and promotions!
+          </h5>
+
+          <form action="submit_form.php" method="POST">
+            <div class="name-email">
+              <label class="labnew" for="name">Name:</label>
+              <input type="text" id="name" name="name" required /><br /><br />
+            </div>
+            <div class="name-email">
+              <label class="labnew" for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
+            </div>
+
+            <input class="signmeup" type="submit" value="Sign me up" />
+          </form>
+        </div>
+      </article>
+
+      <footer>
+        <div class="about-us bigger">
+          <a href="ecology.html" target="_blank">Ecology</a>
+          <a href="#">Time and delivery costs</a>
+          <a href="#">Payment methods</a>
+          <a href="#">Contact</a>
+          <a href="#">Work with us</a>
+        </div>
+        <div class="my-account bigger">
+          <a href="#">Sign in</a>
+          <a href="#">My oreders</a>
+          <a href="#">Shopping cart</a>
+          <a href="#">Transaction history</a>
+        </div>
+        <div class="help bigger">
+          <a href="#">Terms and conditions of purchase</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Complaints and returns</a>
+          <a href="#">Cookies policy</a>
+          <a href="#">Frequently asked questions</a>
+        </div>
+        <div class="customer-service-center">
+          <p>Tel. 123456789</p>
+          <p>Email: bookstore@gmail.com</p>
+          <p>Mon - Fri 08:00 - 18:00</p>
+        </div>
+        <div class="find-us">
+          <button class="find-us-button">
+            <a href="#" class="fa fa-instagram"></a>
+          </button>
+          <button class="find-us-button">
+            <a href="#" class="fa fa-twitter"></a>
+          </button>
+          <button class="find-us-button">
+            <a href="#" class="fa fa-facebook"></a>
+          </button>
+        </div>
+        <p id="copyright" class="copyright-text">
+          Copyright &copy; 2027 by Bookstore.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
